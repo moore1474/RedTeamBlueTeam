@@ -1,6 +1,5 @@
- import { Component } from '@angular/core';
-import {Card} from "./model/card";
-import {Cards} from "./model/cards";
+import { Component } from '@angular/core';
+import {CARDS} from "./model/cards";
 
 
 @Component({
@@ -10,8 +9,6 @@ import {Cards} from "./model/cards";
 })
 export class AppComponent  {
   name = 'Angular';
-
-  readonly cards = new Cards();
 
 constructor() {
  }

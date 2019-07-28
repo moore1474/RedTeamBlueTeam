@@ -17,8 +17,8 @@ readonly blue = [];
 readonly red = [];
 
 constructor(){
-    this.blue.concat(this.all.filter(crd => crd.team === Team.BLUE));
-    this.red.concat(this.all.filter(crd => crd.team === Team.RED));
+   // this.blue.concat(this.all.filter(crd => crd.team === Team.BLUE));
+   // this.red.concat(this.all.filter(crd => crd.team === Team.RED));
 }
 
 
