@@ -1,13 +1,15 @@
 export class Card{
 
-  constructor(readOnly team: String, readOnly value: number) { }
+  constructor(readonly team: Team, readonly value: number) { }
 
 }
 
+enum Team {
+  RED = "Red",
+  BLUE = "Blue"
+}
+
 export const cards = [
-  {
-    "team": "red",
-    "val": 1
-  },
-  
+   new Card(Team.RED, 1),
+   new Card(Team.BLUE, 1)
 ]
