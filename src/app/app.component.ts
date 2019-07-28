@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+ import { Component } from '@angular/core';
+import {Card} from "./model/card";
+import {ALL_CARDS} from "./model/cards";
+
 
 @Component({
   selector: 'my-app',
@@ -7,4 +10,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+
+  readonly cards = ALL_CARDS;
+
+constructor() {
+ }
+
 }
