@@ -10,7 +10,10 @@ import {CARDS} from "./model/cards";
 export class AppComponent  {
   name = 'Angular';
 
+  cards = CARDS;
+
 constructor() {
+  console.log("Starting game");
  }
 
 }

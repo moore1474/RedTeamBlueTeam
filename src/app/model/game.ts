@@ -7,5 +7,6 @@ export class Game {
   readonly player1 = new Player(Team.BLUE, CARDS.blue);
   readonly player2 = new Player(Team.RED, CARDS.red);
 
+  
 
 }
