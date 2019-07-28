@@ -1,7 +1,7 @@
 import {Team} from "../model/card";
 import {Card} from "../model/card";
 
-export class Cards { 
+export class Cards {
   
   readonly all = [
    new Card(Team.RED, 1),
@@ -12,12 +12,16 @@ export class Cards {
    new Card(Team.BLUE, 3),
 ];
 
-  blue(){
-    return this.all.filter(crd => crd.team === Team.BLUE);
-  }
+readonly blue = [];
 
-  red(){
-    return this.all.filter(crd => crd.team === Team.RED);
-  }
+readonly red = [];
+
+constructor(){
+    this.blue.concat(this.all.filter(crd => crd.team === Team.BLUE));
+    this.red.concat(this.all.filter(crd => crd.team === Team.RED));
+}
+
 
 }
+
+export const CARDS = new Cards();
