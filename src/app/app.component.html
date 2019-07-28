@@ -1,4 +1,7 @@
-<div *ngFor="let card of cards">
-  {{card.team}} {{card.value}}
-</div>
-
+<span class="card blue" *ngFor="let card of cards.blue()">
+  {{card.value}}
+</span>
+<br/>
+<span class="card red" *ngFor="let card of cards.red()">
+  {{card.value}}
+</span>
