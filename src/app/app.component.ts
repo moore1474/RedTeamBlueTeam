@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import {CARDS} from "./model/cards";
-
+import {Game} from './model/game';
 
 @Component({
   selector: 'my-app',
@@ -10,7 +9,7 @@ import {CARDS} from "./model/cards";
 export class AppComponent  {
   name = 'Angular';
 
-  cards = CARDS;
+  game = new Game();
 
 constructor() {
   console.log("Starting game");

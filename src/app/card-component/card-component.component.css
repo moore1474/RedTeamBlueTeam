@@ -1,0 +1,12 @@
+.Red-card {
+  background-color: rgb(255, 53, 53);
+
+}
+
+.card {
+  width: 6em;
+  height: 8em;
+  border: 1px solid;
+  display: inline-block;
+  margin: .5em;
+}

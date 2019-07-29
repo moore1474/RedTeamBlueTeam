@@ -1,4 +1,3 @@
-<span class="card blue" *ngFor="let card of cards.blue">
-  {{card.value}}
+<span class="card" *ngFor="let card of game.player2.hand.cards">
+  <card [card]='card'></card>
 </span>
-<br/>

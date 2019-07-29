@@ -1,6 +1,8 @@
 export class Card{
 
-  constructor(readonly team: Team, readonly value: number) { }
+  constructor(readonly team: Team, readonly value: number) {
+    
+   }
 
 }
 
