@@ -1,11 +1,11 @@
-Player 2
+{{game.player2.name}}
 <span class="card" *ngFor="let card of game.player2.hand.cards">
   <card [card]='card'></card>
 </span>
 
 <play-area></play-area>
 
-Player 1
+{{game.player1.name}}
 <span class="card" *ngFor="let card of game.player1.hand.cards">
   <card [card]='card'></card>
 </span>
