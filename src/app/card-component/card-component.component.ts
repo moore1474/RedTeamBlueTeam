@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
+import { Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'card',
@@ -9,6 +10,7 @@ import { Input } from '@angular/core';
 export class CardComponentComponent implements OnInit {
 
   @Input() card;
+  @Output() notify = new EventEmitter();
 
   constructor() { }
 
