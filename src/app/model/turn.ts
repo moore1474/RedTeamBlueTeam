@@ -16,9 +16,15 @@ export class Turn {
   
   }
 
-  public getPlayer1Status(){
+
+  public getPlayerStatus(playerNum){
     if (this.phase == Phase.SELECT_PHASE_1) {
-      return "select your card";
+      if(playerNum == 1 && this.player_1_selected == null){
+        return "select your card";
+      } else if(playerNum == 2 && this.player_2_selected==null){
+        return "selecting card...";
+      }
+      
     }
     return "";
   }

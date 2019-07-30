@@ -2,13 +2,13 @@
   <card [card]='card'></card>
 </span>
 <div>
-{{game.player2.name}}
+{{game.player2.name}} {{game.turn.getPlayerStatus(2)}}
 <div>
 
 <play-area></play-area>
 
 <div>
-{{game.player1.name}} {{game.turn.getPlayer1Status()}}
+{{game.player1.name}} {{game.turn.getPlayerStatus(1)}}
 <div>
 <span class="card" *ngFor="let card of game.player1.hand.cards">
   <card [card]='card'></card>
