@@ -17,10 +17,14 @@ export class AppComponent {
 
   cardSelected(card) {
     this.game.turn.player_1_selected = card;
-    this.game.player1.hand.removeCard(card);
+    setTimeout(() => {
+      this.game.player1.hand.removeCard(card);
+    }, 200);
     setTimeout(() => {
       this.game.turn.player_2_selected = this.game.player2.hand.randomCard();
-      this.game.player2.hand.removeCard(this.game.turn.player_2_selected);
+      setTimeout(() => {
+        this.game.player2.hand.removeCard(this.game.turn.player_2_selected);
+      }, 200);
     }, 635);
 
   }
