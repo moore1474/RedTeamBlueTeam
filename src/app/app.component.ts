@@ -20,12 +20,7 @@ export class AppComponent {
     setTimeout(() => {
       this.game.player1.hand.removeCard(card);
     }, 200);
-    setTimeout(() => {
-      this.game.turn.player_2_selected = this.game.player2.hand.randomCard();
-      setTimeout(() => {
-        this.game.player2.hand.removeCard(this.game.turn.player_2_selected);
-      }, 200);
-    }, 635);
+  
 
   }
 

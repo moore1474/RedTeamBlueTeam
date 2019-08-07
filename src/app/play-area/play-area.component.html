@@ -1,4 +1,5 @@
-<p>
+<p *ngIf='turn.player_1_selected;else no_cards'>
   <card [card]='turn.player_1_selected'></card>
   <card [card]='turn.player_2_selected'></card>
 </p>
+<ng-template #no_cards><card [hidden]='1'></card></ng-template>
