@@ -1,20 +1,29 @@
-.Red-card {
-  background-color: rgb(255, 53, 53);
-}
-
-.Blue-card {
-  background-color: rgb(40, 18, 235);
-}
-
 .card {
-  width: 3em;
-  height: 4.5em;
-  border: 3px solid;
-  border-radius: .3em;
+  max-width: 120px;
   display: inline-block;
-  margin: .5em;
+  margin: 10px;
+  border-radius: .3em;
+  padding: .3em;
+}
+
+.Red {
+  background-color: red;
+}
+
+.Blue {
+  background-color: blue;
+}
+
+.card img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 97%;
+  display: block;
+}
+
+.example-header-image {
+  background-image: url('https://images.all-free-download.com/images/graphiclarge/blank_sticky_note_clip_art_12197.jpg');
+  background-size: cover;
   text-align: center;
-  line-height: 4.5em;
   font-size: 2em;
-  font-weight: bold;
 }

@@ -1,3 +1,12 @@
-<div class='card {{card?.team}}-card' (click)="notify.emit(card)">
-  {{card?.value}}
-</div>
+
+<mat-card class="card {{card?.team}}" (click)="notify.emit(card)">
+  <mat-card-header>
+    <mat-card-title>{{card?.value}}. Title</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      This is some text
+    </p>
+  </mat-card-content>
+</mat-card>
