@@ -19,7 +19,7 @@ export class AppComponent {
     this.game.turn.player_1_selected = card;
     setTimeout(() => {
       this.game.player1.hand.removeCard(card);
-    }, 200);
+    }, 400);
   
 
   }
