@@ -1,6 +1,7 @@
-import { Component, Inject} from '@angular/core';
+import { Component} from '@angular/core';
 import { Game } from './model/game';
 import { PlayerInfoComponentComponent } from './player-info-component/player-info-component.component';
+import {MatDialog} from '@angular/material/dialog';
 
 @Component({
   selector: 'my-app',
@@ -11,6 +12,8 @@ export class AppComponent {
   name = 'Angular';
 
   game = new Game();
+
+  constructor(public dialog: MatDialog) {}
 
   cardSelected(card) {
     this.game.turn.player_1_selected = card;
@@ -27,7 +30,10 @@ export class AppComponent {
     }, 800);
 
     setTimeout(() => {
-        console.log(this);
+        const dialogRef = this.dialog.open(PlayerInfoComponentComponent, {
+          width: '250px',
+          data: {}
+        });
       }, 1200);
 
   }
