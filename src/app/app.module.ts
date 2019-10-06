@@ -13,7 +13,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
   imports:      [ BrowserModule, FormsModule, MatCardModule, MatDialogModule, BrowserAnimationsModule],
   declarations: [ AppComponent, CardComponentComponent, PlayAreaComponent, PlayerInfoComponentComponent ],
    entryComponents: [
-    AppComponent
+    AppComponent, PlayerInfoComponentComponent
   ],
   bootstrap:    [ AppComponent ],
   
